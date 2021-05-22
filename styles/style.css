@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    position: relative;
+    font-size: 13px;
+    font-weight: 250;
+    background: rgba(46, 92, 94, 0.815);
+    display: flex;
+    width: 100%;
+    color: white;
+    bottom: 0;
+}
+
+footer .gauche {
+    float: left;
+    margin-left: 10%;
+    padding: 0 10px;
+}
+
+footer .droite {
+    margin-right: 10%;
+    float: right;
+    padding: 10px 0;
+}
+
+.error {
+    color: rgba(194, 8, 8, 0.884);
+}

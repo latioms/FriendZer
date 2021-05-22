@@ -1,0 +1,194 @@
+@font-face {
+    font-family: Poppins;
+    src: url(./../assets/Poppins-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topbar {
+    background-color: linear-gradient(-30deg, rgb(33, 202, 207), #1D2424);
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+}
+
+nav.menu {
+    width: 100%;
+    padding: 5px 0;
+    background: linear-gradient(-30deg, rgb(87, 218, 223), #255757ce);
+    /*background-color: #255757ce;*/
+    display: flex;
+    box-shadow: 10px 5px 10px rgba(23, 124, 129, 0.288);
+}
+
+nav .menuright {
+    padding: 10px 5px;
+    margin-left: 35%;
+}
+
+.menuleft span {
+    width: 210px;
+    margin-top: 10px;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: lavender;
+}
+
+.menuleft {
+    width: 300px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7%;
+}
+
+nav ul {
+    float: right;
+    display: flex;
+    color: #fff;
+}
+
+.menuleft img {
+    z-index: 2;
+}
+
+
+/******** Icon Style *******/
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+    display: block;
+    /*border-right: 1px solid rgba(0,0,0,0.2);*/
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0 15px;
+}
+
+nav ul li a .icon {
+    width: 60%;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto 8px;
+}
+
+nav ul li a .icon .fa {
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    line-height: 40px;
+    color: rgb(56, 56, 56);
+    transition: 0.5s;
+}
+
+nav ul li a .icon .fa:last-child {
+    color: whitesmoke;
+}
+
+ul li a:hover .icon .fa {
+    transform: translateY(-100%);
+}
+
+.icon img {
+    padding: 10px 0;
+    filter: invert(1);
+}
+
+
+/******** Name Style********/
+
+ul li a .name {
+    position: relative;
+    height: 18px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    color: #fff;
+}
+
+ul li a .name span {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    transition: 0.5s;
+}
+
+ul li a .name span:before {
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(33, 202, 207);
+}
+
+ul li a:hover .name span {
+    transform: translateY(18px);
+}
+
+#recher {
+    padding: 3px;
+    float: right;
+    border-radius: 5px;
+    background: #fff;
+    border: rgba(23, 124, 129, 0.2);
+    box-shadow: 5px 2px 5px rgba(23, 124, 129, 0.205);
+    color: black;
+}
+
+#recher:focus {
+    padding: 3px;
+    border-radius: 5px;
+    border-color: salmon;
+}
+
+@media all and (max-width: 1000px) {
+    .menuleft {
+        position: relative;
+        width: auto;
+    }
+    .menu {
+        display: inline-block;
+    }
+    .menu li {
+        padding-left: 3px;
+    }
+    .menuright {
+        display: block;
+        position: relative;
+        margin: auto;
+    }
+    .menuright a {
+        font-size: 10px;
+        position: relative;
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .menuright {
+        /*width: auto;
+        text-align: center;*/
+        margin: auto;
+    }
+}
+
+.error {
+    color: rgba(194, 13, 13, 0.932);
+}
